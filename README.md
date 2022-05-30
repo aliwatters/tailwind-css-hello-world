@@ -62,3 +62,9 @@ $ docker run -d -p 8080:80 webserver
 ```
 
 then visit: http://localhost:8080/
+
+## Switch things up a bit
+
+`npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch`
+
+With a `src/css` `src/html` structure.

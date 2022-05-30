@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - ./src/html:/usr/share/nginx/html
+      - ./dist/css:/usr/share/nginx/html/css
+    ports:
+      - "8080:80"
+    restart: always
